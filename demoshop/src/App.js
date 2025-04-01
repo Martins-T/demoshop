@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "http://localhost:8080/products";
+const API_URL = "https://demoshop-qncl.onrender.com/products";
 
 function App() {
     const [products, setProducts] = useState([]);
