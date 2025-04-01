@@ -72,25 +72,22 @@ function App() {
     return (
         <div>
             <h1>Internetveikals</h1>
-            <div style={{marginBottom: "20px"}}>
-                <button
-                    style={{marginLeft: "10px", marginRight: "10px"}}
-                    onClick={fetchProducts}
-                >
+            <div style={{
+                marginBottom: "20px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+                maxWidth: "250px"
+            }}>
+                <button onClick={fetchProducts}>
                     Ielādēt produktus
                 </button>
 
-                <button
-                    style={{marginRight: "10px"}}
-                    onClick={addProduct}
-                >
+                <button onClick={addProduct}>
                     Pievienot nejaušu produktu
                 </button>
 
-                <button
-                    style={{color: "red"}}
-                    onClick={deleteAllProducts}
-                >
+                <button style={{ color: "red" }} onClick={deleteAllProducts}>
                     Dzēst visus produktus
                 </button>
             </div>
